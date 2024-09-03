@@ -1,0 +1,1 @@
+Get https://morning-fjord-40195-ac44acea7d8a.herokuapp.com/api/recipe/update/Chicken Curry

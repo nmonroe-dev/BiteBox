@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="BiteBox - Discover and organize delicious recipes with ease."
+    />
+    <meta name="keywords" content="recipes, cooking, food, BiteBox, culinary" />
+    <meta name="author" content="Nathan Monroe" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiteBox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="image-container">
+          <img src="images/food3.png" alt="Welcome Image" />
+        </div>
+        <div class="info-container">
+          <h1>BiteBox</h1>
+          <p>
+            Discover and organize delicious recipes with ease. Your culinary
+            journey starts here!
+          </p>
+        </div>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Search for a recipe..." />
+        <button class="oneRecipe">View Recipe</button>
+        <button id="button2" class="allRecipes">View All Recipes</button>
+      </div>
+    </header>
+    <div class="recipeContainer">
+      <div class="recipe">
+        <div class="imgRecipeBox"><img class="imgBox" src="" /></div>
+        <div class="nameRecibeBox"><p></p></div>
+      </div>
+    </div>
+    <main class="main-content">
+      <div class="recipe-image">
+        <h1 class="error1"></h1>
+        <img class="mainRecipe" src="" alt="Recipe Image" />
+      </div>
+      <hr class="line" />
+      <div class="recipe-details">
+        <h2 class="recipeName"></h2>
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li class="ingredientsLi"></li>
+          </ul>
+        </div>
+        <div class="instructions">
+          <h2>Instructions</h2>
+          <p class="instructionsP"></p>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
