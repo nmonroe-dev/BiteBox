@@ -4,7 +4,7 @@ const recipeButton = document.querySelector(".oneRecipe");
 
 recipeButton.addEventListener("click", () => {
     const input = document.querySelector("input").value;
-    const url = `https://morning-fjord-40195-ac44acea7d8a.herokuapp.com/api/recipe/${input}`;
+    const url = `https://bite-box-da0099d606eb.herokuapp.com/api/recipe/${input}`;
     
     fetch(url)
         .then(res => {
@@ -39,7 +39,7 @@ recipeButton.addEventListener("click", () => {
 const button2 = document.querySelector("#button2");
 
 button2.addEventListener("click", () => {
-    const url = "https://morning-fjord-40195-ac44acea7d8a.herokuapp.com/api/recipes";
+    const url = "https://bite-box-da0099d606eb.herokuapp.com/api/recipes";
     fetch(url)
     .then(res => {
         if (!res.ok) {
@@ -79,7 +79,7 @@ button2.addEventListener("click", () => {
             const clickedRecipe = event.target.closest(".recipe");
             if (clickedRecipe) {
                 const id = clickedRecipe.id;  
-                const targetUrl = `https://morning-fjord-40195-ac44acea7d8a.herokuapp.com/api/recipe/${id}`;
+                const targetUrl = `https://bite-box-da0099d606eb.herokuapp.com/api/recipe/${id}`;
                 console.log(`Fetching recipe from: ${targetUrl}`); 
                 
                 fetch(targetUrl)
