@@ -196,7 +196,7 @@ body {
     text-align: center;
 }
 
-/* Media query for tablets and larger screens */
+
 @media(min-width: 768px) {
     .header-content {
         flex-wrap: nowrap;
